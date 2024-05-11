@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family:'Poppins',sans-serif;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: cneter;
+  padding: 20px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 36px;
+  width: 1200px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.photo {
+  /* Your styling for the photo */
+  width: 200px;
+  height: 200px;
+  overflow: hidden; /* Ensures the photo doesn't overflow its container */
+  border-radius: 50%; /* Makes the photo round */
+}
+
+/* Add animation to the photo */
+.photo img {
+  width: 100%;
+  height: 150%;
+  transition: transform 0.3s ease-in-out;
+  
+  border-radius: 10%;
+ 
+    
+}
+
+.photo:hover img {
+  transform: scale(1.3); /* Change the scale factor as needed */
+  duration: 200ms;
+}
+
+.title {
+
+}
+
+
+.gradient_background {
+  background: linear-gradient(90deg, #A9DFBF, #FDFEFE);
+  height: 35vh;
+  width: 100%;
+}
+.gradient_rev_background {
+  background: linear-gradient(90deg,  #FDFEFE,#A9DFBF);
+  height: 35vh;
+  width: 102%;
+}
+
